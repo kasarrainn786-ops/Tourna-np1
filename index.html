@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sanu — Web Designer & Developer portfolio. Modern websites for businesses, shops and online stores.">
+<title>Sanu — Web Designer & Developer</title>
+<style>
+:root{--bg:#07111f;--card:#0d1b2d;--text:#f4f7fb;--muted:#9fb0c5;--accent:#5eead4;--accent2:#60a5fa;--line:#1b3048}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,#07111f,#0a1525 55%,#07111f);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1050px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.84);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.navin{height:68px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:21px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--text)}
+.hero{padding:92px 0 76px;display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}
+.badge{display:inline-block;border:1px solid #21425b;background:#0c2033;color:var(--accent);padding:7px 13px;border-radius:999px;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(42px,7vw,72px);line-height:1.03;letter-spacing:-2.5px;margin-bottom:20px}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:18px;max-width:650px}
+.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:12px 19px;border-radius:11px;font-weight:700;border:1px solid var(--line);background:#10233a}
+.btn.primary{background:linear-gradient(90deg,#2dd4bf,#3b82f6);border:0;color:#06121e}
+.profile{height:290px;border-radius:28px;border:1px solid #21405a;background:radial-gradient(circle at 30% 20%,#123b54,transparent 48%),linear-gradient(145deg,#0e2337,#091625);display:flex;align-items:center;justify-content:center;box-shadow:0 25px 80px rgba(0,0,0,.25)}
+.avatar{width:145px;height:145px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:900;background:linear-gradient(135deg,#5eead4,#60a5fa);color:#07111f;border:8px solid rgba(255,255,255,.12)}
+section{padding:70px 0}.section-title{font-size:30px;margin-bottom:10px}.section-sub{color:var(--muted);margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:rgba(13,27,45,.88);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#2e5977}
+.icon{font-size:28px;margin-bottom:13px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.projects{grid-template-columns:repeat(3,1fr)}
+.project{overflow:hidden;padding:0}.project-top{height:145px;padding:22px;display:flex;align-items:end;background:linear-gradient(135deg,#14334b,#0a1728)}.project:nth-child(2) .project-top{background:linear-gradient(135deg,#26304b,#101a2e)}.project:nth-child(3) .project-top{background:linear-gradient(135deg,#143f39,#0b211f)}.project-body{padding:21px}.tag{display:inline-block;font-size:11px;color:var(--accent);background:#102d35;border:1px solid #1d4b4f;border-radius:20px;padding:4px 9px;margin-top:12px}
+.contact{display:flex;justify-content:space-between;gap:25px;align-items:center;background:linear-gradient(120deg,#0f2940,#0c1e31);border:1px solid #23445e;border-radius:24px;padding:34px}
+.contact p{color:var(--muted);margin-top:7px}.contact-btn{white-space:nowrap}
+footer{padding:35px 0;color:#71849b;text-align:center;font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:65px}.profile{height:220px}.grid,.projects{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+@media(max-width:520px){.grid,.projects{grid-template-columns:1fr}.hero{padding-bottom:30px}h1{letter-spacing:-1.5px}.contact{display:block}.contact-btn{display:inline-block;margin-top:20px}}
+</style>
+</head>
+<body>
+<nav><div class="container navin">
+  <a class="logo" href="#">Sanu<span>.</span></a>
+  <div class="navlinks"><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main>
+<section class="hero container">
+  <div>
+    <div class="badge">AVAILABLE FOR WEB PROJECTS</div>
+    <h1>Modern websites that help <span>businesses grow.</span></h1>
+    <p>I’m Sanu, a web designer & developer focused on clean, mobile-friendly websites for shops, local businesses and online stores.</p>
+    <div class="buttons"><a class="btn primary" href="#work">View My Work</a><a class="btn" href="#contact">Let's Work Together</a></div>
+  </div>
+  <div class="profile"><div class="avatar">S</div></div>
+</section>
+
+<section id="services"><div class="container">
+  <h2 class="section-title">What I can build</h2>
+  <p class="section-sub">Practical websites designed around your business and customers.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🛍️</div><h3>Business Websites</h3><p>Professional websites for local shops, services and growing businesses.</p></div>
+    <div class="card"><div class="icon">🛒</div><h3>Online Stores</h3><p>Product catalogs, cart, checkout flows and customer-friendly shopping experiences.</p></div>
+    <div class="card"><div class="icon">📱</div><h3>Mobile-First Design</h3><p>Responsive layouts that look and work smoothly on phones, tablets and desktops.</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="container">
+  <h2 class="section-title">Selected Work</h2>
+  <p class="section-sub">Examples of the types of projects I work on.</p>
+  <div class="grid projects">
+    <div class="card project"><div class="project-top"><strong>Commercial Bag Store</strong></div><div class="project-body"><h3>Bag Shop E-commerce</h3><p>Modern product browsing, cart and checkout concept for a commercial bag business.</p><span class="tag">E-commerce</span></div></div>
+    <div class="card project"><div class="project-top"><strong>Thrift Store</strong></div><div class="project-body"><h3>Thrift Fashion Store</h3><p>Clothing-focused online store concept with products, ordering and admin workflow.</p><span class="tag">Online Store</span></div></div>
+    <div class="card project"><div class="project-top"><strong>Business Landing Page</strong></div><div class="project-body"><h3>Local Business Website</h3><p>Clean one-page business presence designed to build trust and generate inquiries.</p><span class="tag">Business Website</span></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="contact">
+    <div><h2>Have a website idea?</h2><p>Tell me what you need and I’ll help turn it into a clean, professional website.</p></div>
+    <a class="btn primary contact-btn" href="mailto:your-email@example.com">Contact Me</a>
+  </div>
+</div></section>
+</main>
+
+<footer>© 2026 Sanu — Web Designer & Developer · Built for modern businesses</footer>
+</body>
+</html>
